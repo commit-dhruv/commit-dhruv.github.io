@@ -233,8 +233,12 @@ html[data-hero="stacked"][data-mood="terminal"] h1.name .greet { color: var(--fg
   grid-template-columns: 1fr auto;
   gap: 24px;
   align-items: baseline;
+  transition: padding-left 200ms ease;
 }
 .entry:last-child { border-bottom: 0; }
+a.entry { color: inherit; }
+a.entry:hover { padding-left: 6px; }
+a.entry:hover .date { color: var(--fg); }
 .entry h3 {
   margin: 0 0 4px;
   font-size: 15px;
