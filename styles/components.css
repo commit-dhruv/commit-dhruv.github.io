@@ -377,9 +377,9 @@ a.entry:hover .date { color: var(--fg); }
 }
 
 /* ============================================================
-   Mobile (≤ 560px) — overall density + readability tightening
+   Mobile (≤ 720px) — overall density + readability tightening
    ============================================================ */
-@media (max-width: 560px) {
+@media (max-width: 720px) {
   /* Hero: clamp size so it doesn't dominate the viewport */
   h1.name {
     font-size: calc(clamp(48px, 16vw, 72px) * var(--hero-scale));
@@ -424,7 +424,10 @@ a.entry:hover .date { color: var(--fg); }
     gap: 14px;
     padding: 20px;
   }
-  .resume-card .btn { justify-content: center; }
+  .resume-card .btn {
+    justify-content: center;
+    width: 100%;
+  }
 
   /* Opps card: tighter padding */
   .opps { padding: 22px; }
