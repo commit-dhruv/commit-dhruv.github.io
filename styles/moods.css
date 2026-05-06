@@ -1,0 +1,110 @@
+/* ============================================================
+   Moods — full theme presets activated by [data-mood] on <html>.
+   Default (no attribute) = Graphite (dark neutral).
+   ============================================================ */
+
+/* ===== Paper (light editorial) ===== */
+html[data-mood="paper"] {
+  --bg: #f4f1ea;
+  --bg-elev: #ece8df;
+  --line: #d9d3c5;
+  --line-strong: #b8b1a0;
+  --fg: #1a1815;
+  --fg-dim: #4d4940;
+  --fg-mute: #8a8475;
+  --accent: oklch(0.55 0.10 35);
+  --signal: oklch(0.55 0.13 35);
+}
+
+/* ===== Terminal (phosphor-green CRT) ===== */
+html[data-mood="terminal"] {
+  --bg: #07090a;
+  --bg-elev: #0d1112;
+  --line: #1a2422;
+  --line-strong: #284033;
+  --fg: #c8e6cd;
+  --fg-dim: #6f9c7d;
+  --fg-mute: #466b56;
+  --accent: oklch(0.85 0.18 145);
+  --signal: oklch(0.85 0.18 145);
+}
+html[data-mood="terminal"] body {
+  font-family: var(--mono);
+  letter-spacing: 0.005em;
+}
+html[data-mood="terminal"] h1.name,
+html[data-mood="terminal"] .opps h2,
+html[data-mood="terminal"] .project h3,
+html[data-mood="terminal"] .resume-card h3,
+html[data-mood="terminal"] .entry h3 {
+  font-family: var(--mono);
+  letter-spacing: -0.01em;
+}
+html[data-mood="terminal"] body::before {
+  content: "";
+  position: fixed; inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(200, 230, 205, 0.025) 0,
+    rgba(200, 230, 205, 0.025) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+  z-index: 999;
+  mix-blend-mode: screen;
+}
+html[data-mood="terminal"] h1.name {
+  text-shadow: 0 0 24px oklch(0.85 0.18 145 / 0.35);
+}
+
+/* ===== Midnight (cool-retro-term blue phosphor) ===== */
+html[data-mood="midnight"] {
+  --bg: #02060a;
+  --bg-elev: #061018;
+  --line: #133855;
+  --line-strong: #245a82;
+  --fg: #c8f3ff;
+  --fg-dim: #6fc8e0;
+  --fg-mute: #3f8aa6;
+  --accent: oklch(0.92 0.12 220);
+  --signal: oklch(0.92 0.12 220);
+}
+html[data-mood="midnight"] body {
+  font-family: var(--mono);
+  letter-spacing: 0.005em;
+}
+html[data-mood="midnight"] h1.name,
+html[data-mood="midnight"] .opps h2,
+html[data-mood="midnight"] .project h3,
+html[data-mood="midnight"] .resume-card h3,
+html[data-mood="midnight"] .entry h3 {
+  font-family: var(--mono);
+  letter-spacing: -0.01em;
+}
+html[data-mood="midnight"] body::before {
+  content: "";
+  position: fixed; inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(120, 220, 255, 0.03) 0,
+    rgba(120, 220, 255, 0.03) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+  z-index: 999;
+  mix-blend-mode: screen;
+}
+html[data-mood="midnight"] body::after {
+  content: "";
+  position: fixed; inset: 0;
+  pointer-events: none;
+  background: radial-gradient(ellipse 95% 75% at 50% 50%, transparent 55%, rgba(0,0,0,0.45) 100%);
+  z-index: 998;
+}
+html[data-mood="midnight"] h1.name {
+  text-shadow:
+    0 0 8px oklch(0.92 0.12 220 / 0.55),
+    0 0 26px oklch(0.92 0.12 220 / 0.28);
+}
