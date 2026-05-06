@@ -375,3 +375,72 @@ a.entry:hover .date { color: var(--fg); }
   .contact-row { grid-template-columns: 80px 1fr auto; gap: 12px; }
   .contact-row .v { font-size: 14px; }
 }
+
+/* ============================================================
+   Mobile (≤ 560px) — overall density + readability tightening
+   ============================================================ */
+@media (max-width: 560px) {
+  /* Hero: clamp size so it doesn't dominate the viewport */
+  h1.name {
+    font-size: calc(clamp(48px, 16vw, 72px) * var(--hero-scale));
+    letter-spacing: -0.035em;
+    margin: 0 0 20px;
+  }
+  html[data-hero="stacked"] h1.name {
+    font-size: calc(clamp(44px, 14vw, 64px) * var(--hero-scale));
+  }
+
+  .meta { margin-bottom: 18px; font-size: 11px; }
+  .prose p { font-size: 15px; line-height: 1.65; }
+  .lede { font-size: 16px; }
+
+  /* Section heads: stack title above tag instead of jamming side-by-side */
+  .section-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    margin-bottom: 22px;
+  }
+
+  /* Education entry: stack date below title (no "Technology &" wrap) */
+  .entry {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+  .entry .date { font-size: 11px; }
+
+  /* Projects: tighter padding + size */
+  .project { padding: 22px 0; }
+  .project h3 { font-size: 16px; }
+  .project p { font-size: 14px; }
+  .project .top { flex-wrap: wrap; gap: 6px 12px; }
+  .project .metrics { gap: 16px; }
+  .project .metrics .m b { font-size: 16px; }
+
+  /* Resume card: stack download below filename */
+  .resume-card {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+    padding: 20px;
+  }
+  .resume-card .btn { justify-content: center; }
+
+  /* Opps card: tighter padding */
+  .opps { padding: 22px; }
+  .opps h2 { font-size: 20px; }
+
+  /* Buttons: full-width on small screens reads cleaner */
+  .ctas { gap: 10px; }
+  .btn { padding: 10px 16px; }
+
+  /* Skills: extra breathing room when stacking */
+  .skill-row { padding-bottom: 14px; }
+}
+
+/* Tighten section vertical rhythm on phones (independent of density) */
+@media (max-width: 560px) {
+  section { padding: 56px 0; }
+  #hero { padding-top: 88px; padding-bottom: 48px; }
+  footer { padding: 32px 0 40px; margin-top: 40px; }
+}

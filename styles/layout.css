@@ -10,6 +10,11 @@
   transition: max-width 320ms ease, padding 320ms ease;
 }
 
+/* Mobile shell — predictable side gutters regardless of density preset */
+@media (max-width: 560px) {
+  .shell { padding: 0 20px; }
+}
+
 /* ---------- Top nav ---------- */
 nav.top {
   position: fixed;
