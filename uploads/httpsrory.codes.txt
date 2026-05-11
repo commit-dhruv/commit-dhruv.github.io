@@ -1,0 +1,11 @@
+https://rory.codes/
+https://www.adikuma.com/
+https://www.conordewey.com/
+https://stefanzweifel.dev/
+https://mufeedcm.com/
+https://ignaciofigueroa.dev/en
+
+- favicon
+- title
+- resume/CV download
+- made using claude

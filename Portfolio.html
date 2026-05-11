@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dhruv Prajapati</title>
+  <meta name="description" content="Dhruv Prajapati — BE Information Technology student building computer vision and machine learning systems in Python. Open to internships and early-career roles." />
+  <meta name="author" content="Dhruv Prajapati" />
+  <meta name="theme-color" content="#07090a" />
+  <meta property="og:title" content="Dhruv Prajapati — Developer" />
+  <meta property="og:description" content="BE Information Technology student. Computer vision, ML, Python." />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="apple-touch-icon" href="favicon.svg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Styles (split by concern — see README.md) -->
+  <link rel="stylesheet" href="styles/tokens.css" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/layout.css" />
+  <link rel="stylesheet" href="styles/components.css" />
+  <link rel="stylesheet" href="styles/moods.css" />
+
+  <!-- Persisted tweak defaults — host rewrites this JSON on tweak change.
+       Keep in sync with the data-* attributes on <html> below to avoid flash. -->
+  <script>
+    window.__TWEAK_DEFAULTS__ = /*EDITMODE-BEGIN*/{
+      "mood": "terminal",
+      "density": "calm",
+      "hero": "soft"
+    }/*EDITMODE-END*/;
+  </script>
+  <!-- Apply the defaults to <html> immediately, before paint -->
+  <script src="scripts/tweaks-bridge.js"></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ===================== NAV ===================== -->
+<nav class="top" aria-label="Primary">
+  <div class="shell">
+    <ul>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="main">
+
+  <!-- ===================== HERO ===================== -->
+  <section id="hero" data-screen-label="01 Hero">
+    <div class="shell">
+      <p class="meta">
+        <span class="dot" aria-hidden="true"></span>
+        <span># whoami — Kalol, IN · UTC+5:30</span>
+      </p>
+
+      <h1 class="name">
+        <span class="greet">Hi, I'm</span>Dhruv<span class="period">.</span>
+      </h1>
+
+      <div class="prose" style="margin-bottom: 36px;">
+        <p>
+          I turn messy real-world data into systems that actually work.
+          Currently finishing my BE in Information Technology at
+          <strong>LDRP-ITR</strong>, Gandhinagar.
+        </p>
+        <p>
+          Lately: a <strong>Flask</strong> service shipping <strong>XGBoost</strong>
+          forecasts for IPL powerplay, and a real-time detection pipeline with
+          a tracking + rule-fusion backend.
+        </p>
+      </div>
+
+      <div class="ctas">
+        <a class="btn primary" href="#resume">
+          See resume / CV
+          <svg class="arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+            <path d="M3 9L9 3M9 3H4M9 3V8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a class="btn ghost" href="#contact">Get in touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section id="skills" data-screen-label="03 Skills">
+    <div class="shell">
+      <div class="section-head reveal">
+        <h2>Skills</h2>
+        <span class="tag">stack</span>
+      </div>
+
+      <div class="skills-grid reveal">
+        <div class="skill-row">
+          <div class="label">$ languages</div>
+          <div class="items"><span>Python</span>, <span>C++</span></div>
+        </div>
+        <div class="skill-row">
+          <div class="label">$ ml &amp; cv</div>
+          <div class="items">
+            <span>YOLOv8</span>, <span>PyTorch</span>, <span>OpenCV</span>,
+            <span>MediaPipe</span>, <span>XGBoost</span>, <span>Scikit-learn</span>,
+            <span>SHAP</span>
+          </div>
+        </div>
+        <div class="skill-row">
+          <div class="label">$ data</div>
+          <div class="items"><span>Pandas</span>, <span>NumPy</span></div>
+        </div>
+        <div class="skill-row">
+          <div class="label">$ web</div>
+          <div class="items"><span>Flask</span></div>
+        </div>
+        <div class="skill-row">
+          <div class="label">$ tools</div>
+          <div class="items">
+            <span>Git</span>, <span>CUDA</span>, <span>VS Code</span>, <span>Jupyter</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section id="projects" data-screen-label="04 Projects">
+    <div class="shell">
+      <div class="section-head reveal">
+        <h2>Projects</h2>
+        <span class="tag">selected_work</span>
+      </div>
+
+      <div class="projects reveal">
+
+        <a class="project" href="https://github.com/commit-dhruv" target="_blank" rel="noopener">
+          <div class="top">
+            <h3>Crowd Surveillance Anomaly Detection</h3>
+            <span class="year">2024 — 2025</span>
+          </div>
+          <p>
+            Real-time crowd violence detection pipeline combining YOLOv8 person
+            detection, DeepSORT tracking, and MediaPipe pose. A 3-rule fusion
+            (velocity, IoU, arm-elevation) over 3-frame consensus cuts the
+            false-positive rate.
+          </p>
+          <div class="metrics">
+            <div class="m"><b>88%</b><span>accuracy</span></div>
+            <div class="m"><b>80%</b><span>recall</span></div>
+            <div class="m"><b>4%</b><span>false positives</span></div>
+            <div class="m"><b>15–20</b><span>fps (cuda)</span></div>
+          </div>
+          <div class="stack">
+            <span>Python</span><span>YOLOv8</span><span>DeepSORT</span>
+            <span>MediaPipe</span><span>OpenCV</span><span>CUDA</span>
+          </div>
+        </a>
+
+        <a class="project" href="https://github.com/commit-dhruv" target="_blank" rel="noopener">
+          <div class="top">
+            <h3>IPL Powerplay Aggression Predictor</h3>
+            <span class="year">2025 — 2026</span>
+          </div>
+          <p>
+            End-to-end ML system predicting powerplay batting aggression. 17
+            hand-engineered features over 1,169 IPL matches enriched with 10,984
+            T20s; walk-forward CV across five held-out seasons; SHAP
+            explainability shipped behind a Flask dashboard.
+          </p>
+          <div class="metrics">
+            <div class="m"><b>4.87 ± 0.55</b><span>mae (pp)</span></div>
+            <div class="m"><b>5</b><span>seasons (oos)</span></div>
+            <div class="m"><b>12k+</b><span>matches</span></div>
+          </div>
+          <div class="stack">
+            <span>Python</span><span>XGBoost</span><span>SHAP</span>
+            <span>Flask</span><span>Pandas</span><span>Scikit-learn</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EDUCATION ===================== -->
+  <section id="education" data-screen-label="05 Education">
+    <div class="shell">
+      <div class="section-head reveal">
+        <h2>Education &amp; Certifications</h2>
+        <span class="tag">credentials</span>
+      </div>
+
+      <div class="reveal">
+        <div class="entry">
+          <div>
+            <h3>BE, Information Technology</h3>
+            <p class="sub">LDRP Institute of Technology &amp; Research, Gandhinagar</p>
+          </div>
+          <span class="date">Aug 2022 — May 2027</span>
+        </div>
+        <a class="entry" href="uploads/NPTEL_Python_DataScience.pdf" target="_blank" rel="noopener">
+          <div>
+            <h3>Python for Data Science</h3>
+            <p class="sub">NPTEL · IIT Madras — Online Certification</p>
+          </div>
+          <span class="date">View ↗</span>
+        </a>
+        <a class="entry" href="uploads/HackerRank_Python_Basic.pdf" target="_blank" rel="noopener">
+          <div>
+            <h3>Python (Basic)</h3>
+            <p class="sub">HackerRank — Skill Certification</p>
+          </div>
+          <span class="date">View ↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== RESUME ===================== -->
+  <section id="resume" data-screen-label="06 Resume">
+    <div class="shell">
+      <div class="section-head reveal">
+        <h2>Resume / CV</h2>
+        <span class="tag">download</span>
+      </div>
+
+      <a class="resume-card reveal" href="uploads/Dhruv_Prajapati_Resume.pdf" target="_blank" rel="noopener">
+        <div class="info">
+          <h3>Dhruv_Prajapati_Resume.pdf</h3>
+          <p>PDF · Updated May 2026</p>
+        </div>
+        <span class="btn ghost" aria-hidden="true">
+          View
+          <svg class="arrow" width="12" height="12" viewBox="0 0 12 12" fill="none">
+            <path d="M3 9L9 3M9 3H4M9 3V8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact" data-screen-label="07 Contact">
+    <div class="shell">
+      <div class="section-head reveal">
+        <h2>Contact</h2>
+        <span class="tag">elsewhere</span>
+      </div>
+
+      <div class="contact-list reveal">
+        <a class="contact-row" href="mailto:loadstar.dhruv@gmail.com">
+          <span class="k">email</span>
+          <span class="v">loadstar.dhruv@gmail.com</span>
+          <span class="arrow">↗</span>
+        </a>
+        <a class="contact-row" href="https://github.com/commit-dhruv" target="_blank" rel="noopener">
+          <span class="k">github</span>
+          <span class="v">github.com/commit-dhruv</span>
+          <span class="arrow">↗</span>
+        </a>
+        <a class="contact-row" href="tel:+917984761495">
+          <span class="k">phone</span>
+          <span class="v">+91 79847 61495</span>
+          <span class="arrow">↗</span>
+        </a>
+        <a class="contact-row" href="#" onclick="navigator.clipboard&amp;&amp;navigator.clipboard.writeText('loadstar.dhruv@gmail.com');this.querySelector('.arrow').textContent='✓';setTimeout(()=>this.querySelector('.arrow').textContent='⧉',1400);return false;">
+          <span class="k">copy</span>
+          <span class="v">loadstar.dhruv@gmail.com</span>
+          <span class="arrow">⧉</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== OPEN TO OPPORTUNITIES ===================== -->
+  <section id="opportunities" data-screen-label="08 Open to Opportunities">
+    <div class="shell">
+      <div class="opps reveal">
+        <div class="head">
+          <span class="dot" aria-hidden="true"></span>
+          <span># status — open to opportunities</span>
+        </div>
+        <h2>Open to Opportunities</h2>
+        <p>
+          I'm looking for
+          <strong style="color:var(--fg);font-weight:500">internships</strong>
+          and early-career roles in backend engineering — Python services, APIs,
+          and data infrastructure. Remote or India-based; happy to relocate for
+          the right team.
+        </p>
+        <div class="roles">
+          <span>Backend Engineer</span>
+          <span>Python / API</span>
+          <span>Data Engineer</span>
+        </div>
+        <div class="ctas">
+          <a class="btn primary" href="mailto:loadstar.dhruv@gmail.com">
+            Email me
+            <svg class="arrow" width="12" height="12" viewBox="0 0 12 12" fill="none">
+              <path d="M3 9L9 3M9 3H4M9 3V8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a class="btn ghost" href="#resume">View resume</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <div class="shell">
+      <div class="row">
+        <span>© 2026 Dhruv Prajapati · made using Claude</span>
+        <span>Kalol, Gujarat <span class="cursor" aria-hidden="true">▍</span></span>
+      </div>
+    </div>
+  </footer>
+
+</main>
+
+<!-- Page behavior -->
+<script src="scripts/nav.js"></script>
+<script src="scripts/reveal.js"></script>
+
+<!-- Tweaks panel (React) -->
+<div id="tweaks-root"></div>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel" src="scripts/portfolio-tweaks.jsx"></script>
+
+</body>
+</html>
